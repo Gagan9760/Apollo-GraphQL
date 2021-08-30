@@ -30,8 +30,13 @@ const typeDefs = gql`
             model:String!,
             price:Int!,
             year:Int!,
-            os:String!
-        ): Mobile!
+            os:String!,
+            companyID: ID!
+        ): Mobile!,
+        createCompany(
+            name:String!,
+            web:String!
+        ): Company!
     }
 `
 
